@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+}
+.nav-links a {
+  color: #000000;
+}
+/* LOGO */
+.logo {
+  width: 15%;
+}
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+.menu li:hover {
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.menu li {
+  padding: 5px 14px;
+}
+.menu li a {
+  transition: all 0.3s ease 0s;
+}
+.menu li a:hover {
+  color: rgb(0, 22, 146);
+}
+input[type="checkbox"] {
+  display: none;
+}
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+.cloth {
+  width: 350px;
+  padding: 0 15px;
+}
+
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  .containerbottom {
+    flex-direction: column;
+  }
+
+  .merchaside {
+    background-image: url(img/merchbg.png);
+    width: 100%;
+    height: 120vh !important;
+  }
+
+  .merchcontent {
+    flex-direction: column;
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(226, 226, 226);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 10px;
+    z-index: 3;
+  }
+  .logo {
+    width: 30%;
+  }
+  .menu li:hover {
+    display: inline-block;
+    background-color: #ff008c;
+    transition: 0.3s ease;
+  }
+  .menu li + li {
+    margin-top: 12px;
+  }
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  .cloth {
+    padding: 0 45px !important;
+  }
+}
+
+.hal1 {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+}
+.container {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+.containertop {
+  text-align: center;
+  width: auto;
+  height: 10%;
+
+  float: none;
+}
+.containerleft {
+  text-align: left;
+  width: 60%;
+  height: 90%;
+  float: left;
+  display: block;
+}
+.containerright {
+  text-align: left;
+  width: 40%;
+  height: 90%;
+  float: right;
+  padding-top: 170px;
+  display: block;
+}
+.AboutMe {
+  padding: 30px 20px 30px 20px;
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.containertop {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.containerbottom {
+  display: flex;
+  width: 100%;
+}
+
+.blink {
+  width: 40px;
+  height: 40px;
+}
+
+.left {
+  width: 100%;
+}
+
+.Asset4 {
+  width: 100%;
+}
+.right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 90px;
+}
+.siapagua {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(24, 108, 233);
+}
+.siapagua2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+.moreaboutme {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: rgb(39, 151, 226);
+  width: 200px;
+  padding: 15px;
+  margin: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.moreaboutme:hover,
+.moreaboutme:focus,
+.moreaboutme:active {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.checkerboard {
+  width: 100%;
+}
+
+.portoaside {
+  background-image: url(img/checkerboard.jpeg);
+  width: 100%;
+  height: 110vh !important;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.portocontent {
+  width: 73.5%;
+  height: 530px !important;
+  background-color: #ffffff;
+  margin-top: 30px;
+  border-radius: 40px;
+  border: solid black;
+  position: relative;
+}
+.petir {
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  z-index: 99;
+}
+.cool {
+  position: absolute;
+  top: 440px;
+  right: -40px;
+  z-index: 99;
+  width: 300px;
+}
+.foto {
+  width: 260px !important;
+  object-fit: contain !important;
+}
+.merchaside {
+  background-image: url(img/merch.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.merchcontent {
+  display: flex;
+  width: 80%;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px;
+}
+
+footer ul li {
+  display: inline;
+  padding: 20px;
+}
+footer a {
+  padding: 15px;
+  text-decoration: none;
+}
+footer p {
+  padding: 15px;
+}

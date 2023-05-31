@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volieose</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <style>
+      html,
+      body,
+      .main,
+      .Portofolio,
+      .container,
+      .portoaside,
+      .portocontent {
+        position: relative;
+        height: 100%;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img src="img/logo.jpg" alt="logo" class="logo" />
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="#AboutMe">About</a></li>
+            <li><a href="#Portofolio">Portofolio</a></li>
+            <li><a href="#Merch">Merch</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="landing_page">
+        <div class="container">
+          <img src="img/hal1.jpg" alt="hal1" class="hal1" />
+        </div>
+      </div>
+
+      <div class="About_me" id="AboutMe">
+        <div class="container">
+          <div class="containertop">
+            <img src="img/asset2.jpg" alt="blink" class="blink" />
+            <h1 class="AboutMe">About Me</h1>
+            <img src="img/asset2.jpg" alt="blink" class="blink" />
+          </div>
+          <div class="containerbottom">
+            <aside class="left">
+              <img src="img/asset4.jpg" alt="Asset4" class="Asset4" />
+            </aside>
+            <aside class="right">
+              <h4 class="siapagua">Siapa Gue?</h4>
+              <article class="siapagua2">
+                Mahasiswa semester 4 yang ingin menaklukan dunia, enthusiatic
+                design and web development. suka desain-desain tapi gak mau jadi
+                budak desain-desain, tolong untuk saling kasih info kalo ada
+                loker atau bootcamp yang terkait web development, yang ada tugas
+                desain boleh kasih tau sini buka freelance.
+              </article>
+              <a href="https://www.instagram.com/volieose/">
+                <button class="moreaboutme">More About Me</button>
+              </a>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+      <div class="Portofolio" id="Portofolio">
+        <div class="container">
+          <div class="containertop">
+            <img src="img/asset2.jpg" alt="blink" class="blink" />
+            <h1 class="AboutMe">Portofolio</h1>
+            <img src="img/asset2.jpg" alt="blink" class="blink" />
+          </div>
+          <div class="containerbottom">
+          <aside class="portoaside">
+            <div class="portocontent">
+              <img src="img/petir.webp" alt="petir" class="petir" />
+              <img src="img/cool.jpg" alt="cool" class="cool" />
+              <!-- Swiper -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/inception.jpeg" alt="1" class="foto" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/flintcups.jpeg" alt="2" class="foto" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/moon.jpeg" alt="3" class="foto" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/kopi.jpeg" alt="4" class="foto" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/thepeople.jpeg" alt="5" class="foto" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/foto4.jpg" alt="6" class="foto" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/foto5.jpg" alt="7" class="foto" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="Merch" id="Merch">
+        <div class="container">
+          <div class="containertop">
+            <img src="img/asset2.jpg" alt="blink" class="blink" />
+            <h1 class="AboutMe">Merch</h1>
+            <img src="img/asset2.jpg" alt="blink" class="blink" />
+          </div>
+          <div class="containerbottom">
+            <div class="merchaside">
+              <div class="merchcontent">
+                <img src="img/baju.jpg" alt="baju" class="cloth">
+                <img src="img/celana.jpg" alt="celana" class="cloth">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <ul>
+      <li><a href="contact.html">Kontak</a></li>
+      <li><a href="about.html">Mengenai</a></li>
+      <li><a href="copyright.html">Copyright</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="sitemap.xml">Sitemap</a></li>
+      </ul>
+      <p>Copyright <a href="?">Volieose.ltd</a> - 2021</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+      });
+    </script>
+  </body>
+</html>
